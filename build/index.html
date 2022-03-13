@@ -134,11 +134,27 @@
   </header>
   <main>
     <section class="promo">
-      <div>
-        <h2>Путешествие на край Земли</h2>
-        <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
-          лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
-          морских котиков и многое другое.</p>
+      <div class="promo__wrapper wrapper">
+        <div class="promo__paragraf">
+          <h2>Путешествие на край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
+            лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+            китов,
+            морских котиков и многое другое.</p>
+        </div>
+        <div class="promo__image">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 767px)" srcset="./img/content/penguin-mobile.webp 1x, ./img/content/penguin-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)" srcset="./img/content/penguin-tablet.webp 1x, ./img/content/penguin-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/content/penguin-desktop.webp 1x, ./img/content/penguin-desktop@2x.webp 2x"> -->
+            <source media="(max-width: 767px)"
+              srcset="./img/content/penguin-mobile.jpg 1x, ./img/content/penguin-mobile@2x.jpg 2x">
+            <source media="(max-width: 1365px)"
+              srcset="./img/content/penguin-tablet.jpg 1x, ./img/content/penguin-tablet@2x.jpg 2x">
+            <img src="./img/content/penguin-desktop.jpg" srcset="./img/content/penguin-desktop@2x.jpg 2x" width="560"
+              height="301" alt="Фото пингвинов во льдах Антарктики">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="advantages" id="advantages">
@@ -390,7 +406,7 @@
               <svg class="footer-social__facebook-tablet" width="9" height="16">
                 <use xlink:href="#facebook"></use>
               </svg>
-             </a>
+            </a>
           </li>
           <li>
             <a href="https://www.instagram.com/">
@@ -398,9 +414,9 @@
               <svg class="footer-social__instagram-desktop" width="20" height="20">
                 <use xlink:href="#instagram"></use>
               </svg></a>
-              <svg class="footer-social__instagram-tablet" width="16" height="16">
-                <use xlink:href="#instagram"></use>
-              </svg></a>
+            <svg class="footer-social__instagram-tablet" width="16" height="16">
+              <use xlink:href="#instagram"></use>
+            </svg></a>
           </li>
           <li>
             <a href="https://twitter.com/">
@@ -408,9 +424,9 @@
               <svg class="footer-social__twitter-desktop" width="20" height="16">
                 <use xlink:href="#twitter"></use>
               </svg></a></a>
-              <svg class="footer-social__twitter-tablet" width="16" height="13">
-                <use xlink:href="#twitter"></use>
-              </svg></a></a>
+            <svg class="footer-social__twitter-tablet" width="16" height="13">
+              <use xlink:href="#twitter"></use>
+            </svg></a></a>
           </li>
         </ul>
       </section>
