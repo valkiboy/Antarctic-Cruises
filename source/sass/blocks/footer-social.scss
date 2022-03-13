@@ -1,0 +1,90 @@
+//          Социальные сети
+// ----------------------------------
+
+.footer-social {
+  margin-right: 10px;
+}
+
+//          Список меню
+// ----------------------------------
+
+.footer-social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 60px;
+  margin-top: 50px;
+  list-style: none;
+
+  @media (max-width: 1365px) {
+    margin-right: 12px;
+    margin-top: 42px;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 12px;
+    margin-top: 5px;
+    padding-left: 15px;
+  }
+
+  @media (min-width:380px) and (max-width: 767px) {
+    justify-content: space-evenly;
+    margin-top: 44px;
+  }
+}
+
+.footer-social__list li {
+  margin-right: 33px;
+  margin-top: 10px;
+
+  @media (max-width: 1365px) {
+    margin-right: 23px;
+    margin-top: 10px;
+  }
+}
+
+//       Иконки соцсетей
+// ----------------------------
+
+.footer-social__facebook-desktop {
+  @media (max-width: 1365px) {
+    display: none;
+  }
+}
+
+.footer-social__facebook-tablet {
+  display: none;
+
+  @media (max-width: 1365px) {
+    display: block;
+  }
+}
+
+.footer-social__instagram-desktop {
+  @media (max-width: 1365px) {
+    display: none;
+  }
+}
+
+.footer-social__instagram-tablet {
+  display: none;
+
+  @media (max-width: 1365px) {
+    display: block;
+  }
+}
+
+.footer-social__twitter-desktop {
+  @media (max-width: 1365px) {
+    display: none;
+  }
+}
+
+.footer-social__twitter-tablet {
+  display: none;
+
+  @media (max-width: 1365px) {
+    display: block;
+  }
+}
+
+

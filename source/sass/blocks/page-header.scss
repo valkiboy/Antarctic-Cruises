@@ -1,3 +1,6 @@
+//        Основной бэкграунд
+// --------------------------------
+
 .page-header {
   min-height: 650px;
   background-color: #6ba8d6;
@@ -5,9 +8,9 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #F9FBFD;
+  color: #f9fbfd;
 
-  @media (max-width:1366px) and (min-resolution: 2dppx) {
+  @media (max-width: 1366px) and (min-resolution: 2dppx) {
     background-image: url("../img/content/head-pictures-desktop@2x.jpg");
   }
 
@@ -29,6 +32,53 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/head-pictures-mobile@2x.jpg");
     }
+  }
+}
+
+//                Меню
+// ----------------------------------
+
+.page-header__nav-wrapper {
+  @media (max-width: 767px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.page-header__main-nav {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+
+  @media (max-width: 1365px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    background-color: #f9fbfd;
+    color: #011c40;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+//               Логотип
+// ------------------------------------
+
+.page-header__logo-wrapper {
+  margin-top: 10px;
+
+  @media (max-width: 1365px) {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0;
   }
 }
 
@@ -65,31 +115,15 @@
   }
 }
 
+//           Кнопка меню
+// ------------------------------------
+
 .page-header__toggle {
   display: none;
 }
 
-.page-header__main-nav {
-  display: flex;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  justify-content: space-between;
-
-  @media (max-width: 1365px) {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    }
-
-  @media (max-width: 767px) {
-    width: 100%;
-    background-color: #F9FBFD;
-    color: #011C40;
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    }
-}
+//           Список меню
+// ---------------------------------------
 
 .page-header__list {
   list-style: none;
@@ -131,36 +165,18 @@
 
   @media (max-width: 1365px) {
     margin-right: 24px;
-    }
+  }
 }
 
 .page-header__list a {
-  color: #F9FBFD;
+  color: #f9fbfd;
 
   @media (max-width: 767px) {
-    color: #011C40;
+    color: #011c40;
   }
 }
 
-.page-header__logo-wrapper {
-  margin-top: 10px;
-
-  @media (max-width: 1365px) {
-    margin-top: 15px;
-  }
-
-  @media (max-width: 767px) {
-    margin: 0;
-  }
-}
-
-.page-header__nav-wrapper {
-  @media (max-width: 767px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
+// Основной экран
 
 .page-header__wrapper h1 {
   font-size: 54px;
@@ -189,7 +205,8 @@
 
 .page-header__wrapper span {
   @media (max-width: 320px) {
-    padding-right: 120px;
+    display: block;
+    width: 270px;
   }
 }
 
@@ -212,6 +229,8 @@
   }
 }
 
+// Закрытое меню при рабочем js
+
 .page-header--closed .page-header__list {
   @media (max-width: 767px) {
     display: none;
@@ -232,8 +251,8 @@
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
-  box-shadow: 0 6px 0 0 #F9FBFD, 0 12px 0 0 #F9FBFD;
+  background-color: #f9fbfd;
+  box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
 }
 
 .page-header--closed .page-header__logo-mobile-menu {
@@ -250,6 +269,8 @@
     left: 15px;
   }
 }
+
+// Открытое меню при рабочем js
 
 .page-header--open .page-header__logo-mobile-menu {
   @media (max-width: 767px) {
@@ -275,6 +296,7 @@
 .page-header--open .page-header__main-nav {
   @media (max-width: 767px) {
     margin-left: 35px;
+    width: calc(100% - 35px);
   }
 }
 
@@ -299,7 +321,7 @@
     left: 0;
     width: 18px;
     height: 2px;
-    background-color: #011C40;
+    background-color: #011c40;
   }
 
   &::before {
