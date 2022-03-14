@@ -3,7 +3,7 @@
   min-height: 301px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
+  margin-bottom: 115px;
 
   @media (max-width: 1365px) {
     margin-top: 34px;
@@ -12,7 +12,7 @@
 
   @media (max-width: 767px) {
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 }
 

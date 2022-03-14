@@ -10,7 +10,7 @@
   background-size: cover;
   color: #f9fbfd;
 
-  @media (max-width: 1366px) and (min-resolution: 2dppx) {
+  @media (min-width: 1366px) and (min-resolution: 2dppx) {
     background-image: url("../img/content/head-pictures-desktop@2x.jpg");
   }
 
