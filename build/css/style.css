@@ -815,6 +815,114 @@ html {
   width: 82%;
 }
 
+.catalog__wrapper {
+  margin-left: 118px;
+  margin-right: 118px;
+}
+
+.catalog h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.catalog__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.catalog__list li {
+  margin-bottom: 25px;
+  width: 260px;
+  position: relative;
+}
+
+.catalog__list h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.catalog__list div {
+  position: absolute;
+  padding-left: 30px;
+  left: 0;
+  bottom: 9px;
+}
+
+.catalog__list h4 {
+  display: none;
+}
+
+.catalog__list p {
+  display: none;
+}
+
+.catalog__list a {
+  display: none;
+}
+
+.catalog__card:hover div {
+  background-color: #011C40;
+  width: 260px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 386px;
+  padding-left: 25px;
+  padding-right: 25px;
+  bottom: 5px;
+}
+
+.catalog__card:hover h3 {
+  margin-top: 29px;
+  margin-bottom: 13px;
+}
+
+.catalog__card:hover h4 {
+  display: block;
+  color: #f9fbfd;
+  margin: 0;
+  font-weight: 500;
+}
+
+.catalog__card:hover p {
+  display: block;
+  color: #d8d8d9;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.catalog__card:hover a {
+  display: block;
+  color: #011c40;
+  background-color: #f9fbfd;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  margin-top: 26px;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  background-color: #f9fbfd;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+}
+
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
   .page-header {
     background-image: url("../img/content/head-pictures-desktop@2x.jpg");
@@ -822,6 +930,12 @@ html {
 
   .advantages {
     background-image: url("../img/content/advantages-desktop@2x.jpg");
+  }
+}
+
+@media (min-width: 1530px) {
+  .catalog__list li {
+    margin-right: 20px;
   }
 }
 
@@ -1014,6 +1128,47 @@ html {
 
   .advantages__card p {
     margin-left: 20px;
+  }
+
+  .catalog__wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .catalog h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-top: 89px;
+  }
+
+  .catalog__list img {
+    width: 309px;
+  }
+
+  .catalog__list li {
+    width: 309px;
+  }
+
+  .catalog__list div {
+    left: 5px;
+    bottom: 14px;
+  }
+
+  .catalog__card:hover div {
+    width: 309px;
+    left: 0;
+    bottom: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .catalog__card:hover div {
+    width: 270px;
+    left: 0;
+    bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -1297,6 +1452,37 @@ html {
   .advantages__card p {
     width: 88%;
   }
+
+  .catalog__wrapper {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .catalog h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 57px;
+  }
+
+  .catalog__list {
+    margin-top: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .catalog__list img {
+    width: 270px;
+  }
+
+  .catalog__list li {
+    width: 270px;
+  }
+
+  .catalog__list div {
+    padding-left: 20px;
+    bottom: 3px;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
@@ -1359,5 +1545,26 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1365px) {
+  .catalog__list {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1365px) {
+  .catalog__list li {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 590px) and (max-width: 767px) {
+  .catalog__list li {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
