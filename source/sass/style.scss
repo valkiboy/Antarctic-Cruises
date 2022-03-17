@@ -8,6 +8,7 @@
 
 @import "global/fonts";
 @import "global/global.scss";
+@import "global/utils.scss";
 
 // Blocks
 // ---------------------------------
@@ -22,3 +23,6 @@
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
 @import "blocks/button.scss";
+@import "blocks/booking.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/contakts.scss";
