@@ -1,0 +1,45 @@
+.checkbox + label {
+  padding-left: 21px;
+}
+
+.checkbox {
+  margin-top: 18px;
+}
+
+.checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -5px;
+  background-image: url("../img/svg/icon-checkbox-on-desktop.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+
+  @media (max-width: 767px) {
+    left: 0;
+    top: 0;
+    background-image: url("../img/svg/icon-checkbox-on-mobile.svg");
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.checkbox + label::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -5px;
+  background-image: url("../img/svg/icon-checkbox-off-desktop.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+
+  @media (max-width: 767px) {
+    left: 0;
+    top: 0;
+    background-image: url("../img/svg/icon-checkbox-off-mobile.svg");
+    width: 20px;
+    height: 20px;
+  }
+}

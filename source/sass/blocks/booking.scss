@@ -1,0 +1,221 @@
+.booking {
+  background-image: url("../img/content/booking-desktop.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 555px;
+  background-color: #9dbcdd;
+
+  @media (min-width: 1366px) and (min-resolution: 2dppx) {
+    background-image: url("../img/content/booking-desktop@2x.jpg");
+  }
+
+  @media (max-width: 1365px) {
+    min-height: 805px;
+    background-position: left top;
+    background-image: url("../img/content/booking-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/booking-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: 767px) {
+    min-height: 760px;
+    background-image: url("../img/content/booking-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/booking-mobile@2x.jpg");
+    }
+  }
+}
+
+.booking__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1365px) {
+    flex-direction: column;
+    justify-content: center;
+    min-width: 450px;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 767px) {
+    min-width: 290px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.booking__offer {
+  width: 50%;
+
+  @media (max-width: 1365px) {
+    width: 100%;
+  }
+}
+
+.booking__offer h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-left: 163px;
+  margin-top: 213px;
+  margin-bottom: 5px;
+
+  @media (max-width: 1365px) {
+    width: 419px;
+    font-size: 34px;
+    line-height: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 87px;
+  }
+
+  @media (max-width: 767px) {
+    width: 70%;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 59px;
+  }
+}
+
+.booking__offer p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 163px;
+  margin-top: 8px;
+  margin-right: 10px;
+  width: 52%;
+
+  @media (max-width: 1365px) {
+    width: 84%;
+    text-align: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 767px) {
+    width: 92%;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+.booking__form-wrapper {
+  width: 50%;
+
+  @media (max-width: 1365px) {
+    width: 100%;
+  }
+}
+
+.booking__form {
+  width: 403px;
+  min-height: 455px;
+  background-color: #011c40;
+  margin-left: auto;
+  margin-right: 163px;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+
+  @media (max-width: 1365px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+  }
+
+  @media (max-width: 767px) {
+    width: 290px;
+    min-height: 460px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.booking__form div {
+  padding-left: 2px;
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+  }
+}
+
+.booking__form h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f9fbfd;
+  padding-top: 44px;
+  margin-bottom: 27px;
+
+  @media (max-width: 767px) {
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 36px;
+    line-height: 25px;
+    margin-bottom: 28px;
+  }
+}
+
+.booking__form input {
+  line-height: 21px;
+  padding-left: 16px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 16px;
+  border: none;
+  width: 271px;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    width: 230px;
+    box-sizing: border-box;
+    margin-bottom: 21px;
+  }
+}
+
+.booking__form label {
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+  position: relative;
+
+  @media (max-width: 767px) {
+    line-height: 12px;
+    display: block;
+    padding-left: 28px;
+  }
+}
+
+.booking__form button {
+  margin-top: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+
+  @media (max-width: 767px) {
+    margin-top: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
