@@ -1,4 +1,5 @@
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -8,4 +9,24 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+
+input::placeholder {
+  color: #011c40b2;
+}
+
+input::-webkit-input-placeholder {
+  color: #011c40b2;
+}
+
+input::-moz-placeholder {
+  color: #011c40b2;
+}
+
+input:-moz-placeholder {
+  color: #011c40b2;
+}
+
+input:-ms-input-placeholder {
+  color: #011c40b2;
 }
