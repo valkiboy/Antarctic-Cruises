@@ -417,6 +417,7 @@ template {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -426,6 +427,42 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+
+input::-webkit-input-placeholder {
+  color: #011c40b2;
+}
+
+input::-moz-placeholder {
+  color: #011c40b2;
+}
+
+input:-ms-input-placeholder {
+  color: #011c40b2;
+}
+
+input::-ms-input-placeholder {
+  color: #011c40b2;
+}
+
+input::placeholder {
+  color: #011c40b2;
+}
+
+input::-webkit-input-placeholder {
+  color: #011c40b2;
+}
+
+input::-moz-placeholder {
+  color: #011c40b2;
+}
+
+input:-moz-placeholder {
+  color: #011c40b2;
+}
+
+input:-ms-input-placeholder {
+  color: #011c40b2;
 }
 
 .visually-hidden {
@@ -440,6 +477,14 @@ html {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-body {
@@ -625,7 +670,8 @@ html {
   margin-top: 30px;
 }
 
-.page-footer__logo-desktop {
+.page-footer__logo a {
+  display: block;
   margin-left: 103px;
   margin-top: 20px;
 }
@@ -700,7 +746,7 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 115px;
+  margin-bottom: 120px;
 }
 
 .promo__paragraf {
@@ -843,7 +889,7 @@ html {
 }
 
 .catalog__list li {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   width: 260px;
   position: relative;
 }
@@ -860,7 +906,7 @@ html {
   position: absolute;
   padding-left: 30px;
   left: 0;
-  bottom: 9px;
+  bottom: 4px;
 }
 
 .catalog__list h4 {
@@ -883,7 +929,19 @@ html {
   min-height: 386px;
   padding-left: 25px;
   padding-right: 25px;
-  bottom: 5px;
+  bottom: 0;
+}
+
+.catalog__card:focus-within div {
+  background-color: #011c40;
+  width: 260px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 386px;
+  padding-left: 25px;
+  padding-right: 25px;
+  bottom: 0;
+  outline-offset: 2px;
 }
 
 .catalog__card:hover h3 {
@@ -891,7 +949,19 @@ html {
   margin-bottom: 13px;
 }
 
+.catalog__card:focus-within h3 {
+  margin-top: 29px;
+  margin-bottom: 13px;
+}
+
 .catalog__card:hover h4 {
+  display: block;
+  color: #f9fbfd;
+  margin: 0;
+  font-weight: 500;
+}
+
+.catalog__card:focus-within h4 {
   display: block;
   color: #f9fbfd;
   margin: 0;
@@ -905,6 +975,13 @@ html {
   margin-bottom: 12px;
 }
 
+.catalog__card:focus-within p {
+  display: block;
+  color: #d8d8d9;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
 .catalog__card:hover a {
   display: block;
   color: #011c40;
@@ -912,7 +989,16 @@ html {
   padding-top: 10px;
   padding-bottom: 9px;
   margin-top: 26px;
-  cursor: pointer;
+}
+
+.catalog__card:focus-within a {
+  display: block;
+  color: #011c40;
+  background-color: #f9fbfd;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  margin-top: 26px;
+  outline-offset: 2px;
 }
 
 .button {
@@ -921,6 +1007,7 @@ html {
   font-weight: 600;
   line-height: 21px;
   text-align: center;
+  cursor: pointer;
 }
 
 .booking {
@@ -970,7 +1057,7 @@ html {
 .booking__form {
   width: 403px;
   min-height: 455px;
-  background-color: #011C40;
+  background-color: #011c40;
   margin-left: auto;
   margin-right: 163px;
   margin-top: 50px;
@@ -1002,6 +1089,7 @@ html {
   border: none;
   width: 271px;
   margin-bottom: 20px;
+  color: #011c40;
 }
 
 .booking__form label {
@@ -1046,6 +1134,11 @@ html {
   width: 18px;
   height: 18px;
   background-repeat: no-repeat;
+}
+
+.checkbox:focus + label::after {
+  outline: 1px dashed #ffffff;
+  outline-offset: 2px;
 }
 
 .contacts {
@@ -1193,14 +1286,17 @@ html {
     min-height: 120px;
   }
 
+  .page-footer__logo a {
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+
   .page-footer__logo-desktop {
     display: none;
   }
 
   .page-footer__logo-tablet {
     display: block;
-    margin-left: 45px;
-    margin-top: 20px;
   }
 
   .page-footer__list {
@@ -1352,23 +1448,23 @@ html {
 
   .catalog__list div {
     left: 5px;
-    bottom: 14px;
+    bottom: 9px;
   }
 
   .catalog__card:hover div {
     width: 309px;
     left: 0;
-    bottom: 5px;
+    bottom: 0;
     padding-left: 35px;
     padding-right: 35px;
   }
 
-  .catalog__card:hover div {
-    width: 270px;
+  .catalog__card:focus-within div {
+    width: 309px;
     left: 0;
-    bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
+    bottom: 0;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .booking {
@@ -1437,6 +1533,8 @@ html {
 
   .contacts__adress {
     padding-left: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .contacts__adress h3 {
@@ -1624,14 +1722,18 @@ html {
     flex-direction: column;
   }
 
+  .page-footer__logo a {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 40px;
+  }
+
   .page-footer__logo-tablet {
     display: none;
   }
 
   .page-footer__logo-mobile {
     display: block;
-    margin-left: 15px;
-    margin-top: 10px;
   }
 
   .page-footer__list {
@@ -1763,7 +1865,23 @@ html {
 
   .catalog__list div {
     padding-left: 20px;
-    bottom: 3px;
+    bottom: -1px;
+  }
+
+  .catalog__card:hover div {
+    width: 270px;
+    left: 0;
+    bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .catalog__card:focus-within div {
+    width: 270px;
+    left: 0;
+    bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .booking {
@@ -1867,6 +1985,9 @@ html {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     padding-top: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacts__map {
@@ -1882,10 +2003,13 @@ html {
 
   .contacts__adress {
     padding-left: 0;
+    margin-left: 7px;
+    margin-right: 0;
   }
 
   .contacts__adress h3 {
     padding-top: 40px;
+    width: 95%;
   }
 
   .contacts__adress p {
@@ -1929,7 +2053,7 @@ html {
     flex-direction: row;
   }
 
-  .page-footer__logo-mobile {
+  .page-footer__logo a {
     margin-top: 20px;
   }
 

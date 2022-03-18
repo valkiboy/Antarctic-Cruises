@@ -43,3 +43,8 @@
     height: 20px;
   }
 }
+
+.checkbox:focus + label::after {
+  outline: 1px dashed #ffffff;
+  outline-offset: 2px;
+}

@@ -52,10 +52,28 @@
 //               Логотип
 // ------------------------------------
 
-.page-footer__logo-desktop {
+.page-footer__logo a {
+  display: block      ;
   margin-left: 103px;
   margin-top: 20px;
 
+  @media (max-width: 1365px) {
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 40px;
+  }
+
+  @media (min-width: 380px) and (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+
+.page-footer__logo-desktop {
   @media (max-width: 1365px) {
     display: none;
   }
@@ -66,8 +84,6 @@
 
   @media (max-width: 1365px) {
     display: block;
-    margin-left: 45px;
-    margin-top: 20px;
   }
 
   @media (max-width: 767px) {
@@ -80,12 +96,6 @@
 
   @media (max-width: 767px) {
     display: block;
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
-  @media (min-width: 380px) and (max-width: 767px) {
-    margin-top: 20px;
   }
 }
 
