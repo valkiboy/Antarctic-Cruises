@@ -419,14 +419,14 @@ template {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 a {
   text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 input::-webkit-input-placeholder {
@@ -772,9 +772,12 @@ input:-ms-input-placeholder {
   padding-top: 1px;
 }
 
+.promo__image {
+  widows: 100%;
+}
+
 .promo__image img {
   background-color: #cee7ee;
-  height: 301px;
 }
 
 .advantages {
@@ -1367,11 +1370,7 @@ input:-ms-input-placeholder {
 
   .promo__image {
     margin-top: 66px;
-  }
-
-  .promo__image img {
-    width: 324px;
-    height: 264px;
+    width: 48%;
   }
 
   .advantages {
@@ -1789,13 +1788,7 @@ input:-ms-input-placeholder {
 
   .promo__image {
     margin-top: 17px;
-  }
-
-  .promo__image img {
-    width: 290px;
-    height: 186px;
-    display: block;
-    margin: auto;
+    width: 100%;
   }
 
   .advantages {

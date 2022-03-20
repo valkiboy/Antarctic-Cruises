@@ -75,28 +75,30 @@
 }
 
 .promo__image {
+
+  widows: 100%;
   @media (max-width: 1365px) {
     margin-top: 66px;
+    width: 48%;
   }
 
   @media (max-width: 767px) {
     margin-top: 17px;
+    width: 100%;
   }
 }
 
 .promo__image img {
   background-color: #cee7ee;
-  height: 301px;
 
   @media (max-width: 1365px) {
-    width: 324px;
-    height: 264px;
+    // width: 324px;
+    // height: 264px;
   }
 
   @media (max-width: 767px) {
-    width: 290px;
-    height: 186px;
-    display: block;
-    margin: auto;
+    // width: 290px;
+    // height: 186px;
+    // margin: auto;
   }
 }

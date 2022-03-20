@@ -92,18 +92,18 @@
     <div class="page-header__nav-wrapper wrapper">
       <nav class="main-nav page-header__main-nav noselect">
         <div class="page-header__logo-wrapper">
-          <div class="page-header__logo">
-            <a href="#">
-              <svg class="page-header__logo-desktop" width="70" height="38">
+          <div class="page-header__logo" >
+            <a href="#" >
+              <svg class="page-header__logo-desktop" width="70" height="38" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-desktop"></use>
               </svg>
-              <svg class="page-header__logo-tablet" width="38" height="20">
+              <svg class="page-header__logo-tablet" width="38" height="20" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-tablet"></use>
               </svg>
-              <svg class="page-header__logo-mobile" width="42" height="22">
+              <svg class="page-header__logo-mobile" width="42" height="22" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-mobile"></use>
               </svg>
-              <svg class="page-header__logo-mobile-menu" width="42" height="22">
+              <svg class="page-header__logo-mobile-menu" width="42" height="22" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-mobile-menu"></use>
               </svg>
             </a>
@@ -113,10 +113,10 @@
         </div>
         <ul class="page-header__list">
           <li>
-            <a href="#advantages">Преимущества </a>
+            <a href="#advantages" class="page-header__advantages  js-trigger">Преимущества</a>
           </li>
           <li>
-            <a href="#">Направления</a>
+            <a href="#booking">Направления</a>
           </li>
           <li>
             <a href="#catalog">Ближайшие круизы</a>
@@ -148,16 +148,22 @@
         </div>
         <div class="promo__image">
           <picture>
+            <!-- 1х: 290px; 2x: 580px -->
             <source type="image/webp" media="(max-width: 767px)"
               srcset="./img/content/penguin-mobile.webp 1x, ./img/content/penguin-mobile@2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
             <source type="image/webp" media="(max-width: 1365px)"
               srcset="./img/content/penguin-tablet.webp 1x, ./img/content/penguin-tablet@2x.webp 2x">
+            <!-- 1х: 560px; 2x: 1120px -->
             <source type="image/webp"
               srcset="./img/content/penguin-desktop.webp 1x, ./img/content/penguin-desktop@2x.webp 2x">
+            <!-- 1х: 290px; 2x: 580px -->
             <source media="(max-width: 767px)"
               srcset="./img/content/penguin-mobile.jpg 1x, ./img/content/penguin-mobile@2x.jpg 2x">
+            <!-- 1х: 324px; 2x: 648px -->
             <source media="(max-width: 1365px)"
               srcset="./img/content/penguin-tablet.jpg 1x, ./img/content/penguin-tablet@2x.jpg 2x">
+            <!-- 1х: 560px; 2x: 1120px -->
             <img src="./img/content/penguin-desktop.jpg" srcset="./img/content/penguin-desktop@2x.jpg 2x" width="560"
               height="301" alt="Фото пингвинов во льдах Антарктики">
           </picture>
@@ -191,18 +197,24 @@
         <ul class="catalog__list">
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-1-mobile.webp 1x, ./img/content/cruise-1-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-1-tablet.webp 1x, ./img/content/cruise-1-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-1-desktop.webp 1x, ./img/content/cruise-1-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-1-mobile.jpg 1x, ./img/content/cruise-1-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-1-tablet.jpg 1x, ./img/content/cruise-1-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-1-desktop.jpg" srcset="./img/content/cruise-1-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото горы во льдах Антарктиды">
             </picture>
             <div>
               <h3>Круиз “Астория”</h3>
@@ -219,18 +231,24 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-8-mobile.webp 1x, ./img/content/cruise-8-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-8-tablet.webp 1x, ./img/content/cruise-8-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-8-desktop.webp 1x, ./img/content/cruise-8-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-8-mobile.jpg 1x, ./img/content/cruise-8-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-8-tablet.jpg 1x, ./img/content/cruise-8-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-8-desktop.jpg" srcset="./img/content/cruise-8-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото снежной горы в Антарктиде">
             </picture>
             <div>
               <h3>Круиз “Элайн”</h3>
@@ -247,18 +265,24 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-3-mobile.webp 1x, ./img/content/cruise-3-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-3-tablet.webp 1x, ./img/content/cruise-3-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-3-desktop.webp 1x, ./img/content/cruise-3-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-3-mobile.jpg 1x, ./img/content/cruise-3-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-3-tablet.jpg 1x, ./img/content/cruise-3-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-3-desktop.jpg" srcset="./img/content/cruise-3-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото плывущего айсберга">
             </picture>
             <div>
               <h3>Круиз "Атлантис"</h3>
@@ -275,18 +299,24 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-4-mobile.webp 1x, ./img/content/cruise-4-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-4-tablet.webp 1x, ./img/content/cruise-4-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-4-desktop.webp 1x, ./img/content/cruise-4-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-4-mobile.jpg 1x, ./img/content/cruise-4-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-4-tablet.jpg 1x, ./img/content/cruise-4-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-4-desktop.jpg" srcset="./img/content/cruise-4-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото бухты в Антарктиде">
             </picture>
             <div>
               <h3>Круиз "Одиссей"</h3>
@@ -303,18 +333,24 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-5-mobile.webp 1x, ./img/content/cruise-5-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-5-tablet.webp 1x, ./img/content/cruise-5-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-5-desktop.webp 1x, ./img/content/cruise-5-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-5-mobile.jpg 1x, ./img/content/cruise-5-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-5-tablet.jpg 1x, ./img/content/cruise-5-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-5-desktop.jpg" srcset="./img/content/cruise-5-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото пингвинов на берегу">
             </picture>
             <div>
               <h3>Круиз "Олимпия"</h3>
@@ -331,18 +367,24 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-6-mobile.webp 1x, ./img/content/cruise-6-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-6-tablet.webp 1x, ./img/content/cruise-6-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-6-desktop.webp 1x, ./img/content/cruise-6-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-6-mobile.jpg 1x, ./img/content/cruise-6-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-6-tablet.jpg 1x, ./img/content/cruise-6-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-6-desktop.jpg" srcset="./img/content/cruise-6-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото льдин у берега ">
             </picture>
             <div>
               <h3>Круиз "Аврора"</h3>
@@ -359,16 +401,22 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-7-mobile.webp 1x, ./img/content/cruise-7-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-7-tablet.webp 1x, ./img/content/cruise-7-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-7-desktop.webp 1x, ./img/content/cruise-7-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-7-mobile.jpg 1x, ./img/content/cruise-7-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-7-tablet.jpg 1x, ./img/content/cruise-7-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-7-desktop.jpg" srcset="./img/content/cruise-7-desktop@2x.jpg 2x"
                 width="260" height="386" alt="Фото">
             </picture>
@@ -387,18 +435,24 @@
           </li>
           <li class="catalog__card" tabindex="0">
             <picture>
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/content/cruise-8-mobile.webp 1x, ./img/content/cruise-8-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source type="image/webp" media="(max-width: 1365px)"
                 srcset="./img/content/cruise-8-tablet.webp 1x, ./img/content/cruise-8-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <source type="image/webp"
                 srcset="./img/content/cruise-8-desktop.webp 1x, ./img/content/cruise-8-desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
               <source media="(max-width: 767px)"
                 srcset="./img/content/cruise-8-mobile.jpg 1x, ./img/content/cruise-8-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
               <source media="(max-width: 1365px)"
                 srcset="./img/content/cruise-8-tablet.jpg 1x, ./img/content/cruise-8-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="./img/content/cruise-8-desktop.jpg" srcset="./img/content/cruise-8-desktop@2x.jpg 2x"
-                width="260" height="386" alt="Фото">
+                width="260" height="386" alt="Фото снежной горы в Антарктиде">
             </picture>
             <div>
               <h3>Круиз "Минион - 1"</h3>
@@ -424,19 +478,19 @@
             до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
         </div>
         <div class="booking__form-wrapper">
-          <form class="booking__form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
+          <form class="booking__form form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
             <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
             <div>
               <label for="name" class="visually-hidden"></label>
-              <input type="text" id="name" name="name" placeholder="Имя" required>
+              <input type="text" id="name" name="name" placeholder="Имя" required aria-label="Введите ваше имя">
             </div>
             <div>
               <label for="telephone" class="visually-hidden"></label>
-              <input type="tel" id="telephone" name="telephone" placeholder="Телефон" pattern="^([0-9]+)$" required>
+              <input type="tel" id="telephone" name="telephone" placeholder="Телефон" required aria-label="Введите ваш телефон">
             </div>
             <div>
               <label for="email" class="visually-hidden"></label>
-              <input type="email" id="email" name="email" placeholder="Email" required>
+              <input type="email" id="email" name="email" placeholder="Email" required aria-label="Введите вашу почту">
             </div>
             <div>
               <input class="visually-hidden checkbox" type="checkbox" id="privacy" name="privacy" checked required>
@@ -448,11 +502,12 @@
       </div>
     </section>
     <section class="contacts" id="contacts">
+      <h2 class="visually-hidden">Как нас найти</h2>
       <div class="contacts__wrapper wrapper">
         <div class="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003351!2d30.320858716484246!3d59.93871916905377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1647027135324!5m2!1sru!2sru"
-            width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="contacts__adress">
           <h3>У&nbsp;вас ещё остались вопросы или сомнения?
@@ -461,7 +516,7 @@
             <p>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
           </div>
           <div>
-            <a href="tel:88002000000">8-800-200-00-00</a>
+            <a href="tel:88002000000" aria-label="наш телефон">8-800-200-00-00</a>
           </div>
         </div>
       </div>
@@ -473,13 +528,13 @@
         <div class="page-footer__logo-wrapper">
           <div class="page-footer__logo">
             <a href="#">
-              <svg class="page-footer__logo-desktop" width="70" height="38">
+              <svg class="page-footer__logo-desktop" width="70" height="38" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-desktop"></use>
               </svg>
-              <svg class="page-footer__logo-tablet" width="38" height="20">
+              <svg class="page-footer__logo-tablet" width="38" height="20" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-tablet"></use>
               </svg>
-              <svg class="page-footer__logo-mobile" width="42" height="22">
+              <svg class="page-footer__logo-mobile" width="42" height="22" aria-label="Логотип Круизы в Антарктику">
                 <use xlink:href="#logo-mobile"></use>
               </svg>
             </a>
@@ -490,7 +545,7 @@
             <a href="#advantages">Преимущества </a>
           </li>
           <li class="page-footer__item">
-            <a href="#">Направления</a>
+            <a href="#booking">Направления</a>
           </li>
           <li class="page-footer__item">
             <a href="#catalog">Ближайшие круизы</a>
@@ -520,10 +575,10 @@
               <svg class="footer-social__instagram-desktop" width="20" height="20">
                 <use xlink:href="#instagram"></use>
               </svg>
-            <svg class="footer-social__instagram-tablet" width="16" height="16">
-              <use xlink:href="#instagram"></use>
-            </svg>
-          </a>
+              <svg class="footer-social__instagram-tablet" width="16" height="16">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
           </li>
           <li>
             <a href="https://twitter.com/">
@@ -531,18 +586,18 @@
               <svg class="footer-social__twitter-desktop" width="20" height="16">
                 <use xlink:href="#twitter"></use>
               </svg>
-            <svg class="footer-social__twitter-tablet" width="16" height="13">
-              <use xlink:href="#twitter"></use>
-            </svg>
-          </a>
+              <svg class="footer-social__twitter-tablet" width="16" height="13">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
     </div>
   </footer>
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script defer src="js/vendor.min.js"></script>
+  <script defer src="js/main.min.js"></script>
 </body>
 
 </html>
