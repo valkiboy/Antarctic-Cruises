@@ -13,20 +13,6 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-// const pageHeaderAdvantages = document.querySelector('.page-header__advantages');
-
-
-const trigger = document.querySelector('.js-trigger');
-
-const moveTo = new MoveTo({
-  tolerance: 0,
-  duration: 800,
-  easing: 'easeOutQuart',
-  container: window,
-});
-
-moveTo.registerTrigger(trigger);
-
 const myName = document.getElementById('name');
 const myMail = document.getElementById('email');
 const myPhone = document.getElementById('telephone');

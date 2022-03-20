@@ -48,7 +48,6 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "7.0.1",
     "gulp-webp": "4.0.1",
-    "moveto": "^1.8.2",
     "stylelint": "13.13.1",
     "webpack": "4.42.0",
     "webpack-stream": "5.2.1"
