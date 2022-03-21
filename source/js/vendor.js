@@ -212,10 +212,5 @@ const moveTo = new MoveTo({
 const links = document.querySelectorAll('.js-trigger');
 
 links.forEach(function (link) {
-
-  link.addEventListener('click', function (evt) {
-    let target = evt.target;
-    moveTo.registerTrigger(target);
-  });
+  moveTo.registerTrigger(link);
 });
-
