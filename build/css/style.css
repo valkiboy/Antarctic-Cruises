@@ -480,11 +480,15 @@ input:-ms-input-placeholder {
 }
 
 .noselect {
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.wrapper {
+  margin-left: 103px;
+  margin-right: 103px;
 }
 
 .page-body {
@@ -505,11 +509,6 @@ input:-ms-input-placeholder {
   grid-template-rows: min-content 1fr min-content;
   position: relative;
   background-color: #f9fbfd;
-}
-
-.wrapper {
-  margin-left: 103px;
-  margin-right: 103px;
 }
 
 .page-header {
