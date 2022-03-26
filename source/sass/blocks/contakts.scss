@@ -1,7 +1,7 @@
 .contacts {
   min-height: 546px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     min-height: 535px;
   }
 
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     padding-top: 97px;
   }
 
@@ -40,7 +40,7 @@
   width: 560px;
   height: 306px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 324px;
     height: 335px;
   }
@@ -56,8 +56,7 @@
 
   @media (max-width: 1365px) {
     padding-left: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0;
   }
 
   @media (max-width: 767px) {
@@ -71,10 +70,15 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  padding-top: 57px;
 
-  @media (max-width: 1365px) {
+  @media (min-width: 1366px) {
+    width: 500px;
+    padding-top: 57px;
+  }
+
+  @media (max-width: 1023px) {
     padding-top: 51px;
+    width: 100%;
   }
 
   @media (max-width: 767px) {
@@ -90,7 +94,7 @@
   padding-top: 14px;
   position: relative;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     padding-top: 9px;
     width: 81%;
   }
@@ -113,12 +117,27 @@
 
 .contacts__adress a {
   display: block;
+  width: 150px;
   font-size: 16px;
   line-height: 24px;
   padding-left: 28px;
   padding-top: 5px;
   color: #011c40;
   position: relative;
+
+  &:hover {
+    color: #58b0e4;
+  }
+}
+
+.contacts__adress span {
+  @media (min-width: 768px) and (max-width: 798px) {
+    padding-right: 104px;
+  }
+
+  @media (min-width: 320px) and (max-width: 345px) {
+    padding-right: 100px;
+  }
 }
 
 .contacts__adress a::before {

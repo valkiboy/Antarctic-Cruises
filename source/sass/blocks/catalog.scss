@@ -1,9 +1,14 @@
 .catalog__wrapper {
-  margin-left: 118px;
-  margin-right: 118px;
+  margin-left: 60px;
+  margin-right: 60px;
   margin-bottom: 90px;
 
-  @media (max-width: 1365px) {
+  @media (min-width: 1365px) {
+    margin-left: 118px;
+    margin-right: 118px;
+  }
+
+  @media (max-width: 1023px) {
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 70px;
@@ -24,7 +29,7 @@
   text-align: center;
   margin-top: 110px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     font-size: 26px;
     font-weight: 600;
     line-height: 39px;
@@ -57,7 +62,7 @@
 }
 
 .catalog__list img {
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 309px;
   }
 
@@ -70,16 +75,25 @@
   margin-bottom: 30px;
   width: 260px;
   position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
 
   @media (min-width: 1530px) {
     margin-right: 20px;
   }
 
-  @media (max-width: 1365px) {
-    width: 309px;
+  @media (min-width: 1366px) {
+    margin-right: 0;
+    margin-left: 0;
   }
 
-  @media (min-width: 1040px) and (max-width: 1365px) {
+  @media (max-width: 1023px) {
+    width: 309px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: 1365px) and (max-width: 1365px) {
     margin-right: 20px;
   }
 
@@ -106,8 +120,9 @@
   padding-left: 30px;
   left: 0;
   bottom: 4px;
+  overflow: hidden;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     left: 5px;
     bottom: 9px;
   }
@@ -134,12 +149,13 @@
   background-color: #011c40;
   width: 260px;
   box-sizing: border-box;
-  min-height: 386px;
+  height: 386px;
   padding-left: 25px;
   padding-right: 25px;
   bottom: 0;
+  overflow: auto;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 309px;
     left: 0;
     bottom: 0;
@@ -166,7 +182,7 @@
   bottom: 0;
   outline-offset: 2px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 309px;
     left: 0;
     bottom: 0;
@@ -228,6 +244,11 @@
   padding-top: 10px;
   padding-bottom: 9px;
   margin-top: 26px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: #aad7f1;
+  }
 }
 
 .catalog__card:focus-within a {
@@ -237,6 +258,5 @@
   padding-top: 10px;
   padding-bottom: 9px;
   margin-top: 26px;
-  // outline: 1px dashed #c91b1b;
   outline-offset: 2px;
 }

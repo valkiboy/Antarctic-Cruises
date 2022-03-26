@@ -3,6 +3,11 @@
 
 .footer-social {
   margin-right: 10px;
+  width: 21%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 //          Список меню
@@ -11,24 +16,30 @@
 .footer-social__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 60px;
+  margin-right: 0;
   margin-top: 50px;
   list-style: none;
+  padding-left: 30px;
+  justify-content: flex-end;
 
-  @media (max-width: 1365px) {
+
+  @media (min-width: 1366px) {
+    margin-right: 60px;
+    padding-left: 42px;
+  }
+
+
+  @media (max-width: 1023px) {
     margin-right: 12px;
     margin-top: 42px;
+    padding-left: 18px;
   }
 
   @media (max-width: 767px) {
     margin-right: 12px;
     margin-top: 5px;
     padding-left: 15px;
-  }
-
-  @media (min-width: 380px) and (max-width: 767px) {
-    justify-content: space-evenly;
-    margin-top: 44px;
+    justify-content: start;
   }
 }
 
@@ -36,9 +47,17 @@
   margin-right: 33px;
   margin-top: 10px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     margin-right: 23px;
     margin-top: 10px;
+  }
+}
+
+.footer-social__list a {
+  fill: #f9fbfd;
+
+  &:hover {
+    fill: #58b0e4;
   }
 }
 
@@ -46,7 +65,7 @@
 // ----------------------------
 
 .footer-social__facebook-desktop {
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
@@ -54,13 +73,17 @@
 .footer-social__facebook-tablet {
   display: none;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     display: block;
+
+    &:hover {
+      fill: #58b0e4;
+    }
   }
 }
 
 .footer-social__instagram-desktop {
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
@@ -68,13 +91,13 @@
 .footer-social__instagram-tablet {
   display: none;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     display: block;
   }
 }
 
 .footer-social__twitter-desktop {
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
@@ -82,7 +105,7 @@
 .footer-social__twitter-tablet {
   display: none;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     display: block;
   }
 }
