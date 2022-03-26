@@ -2,10 +2,6 @@
   padding-left: 21px;
 }
 
-.checkbox {
-  display: none;
-}
-
 .checkbox:checked + label::after {
   content: "";
   position: absolute;
