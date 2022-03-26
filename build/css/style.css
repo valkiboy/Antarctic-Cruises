@@ -1180,12 +1180,12 @@ input:-ms-input-placeholder {
   background-color: #aad7f1;
 }
 
-.checkbox + label {
-  padding-left: 21px;
+.booking__form .booking__checkbox {
+  width: 0%;
 }
 
-.checkbox {
-  display: none;
+.checkbox + label {
+  padding-left: 21px;
 }
 
 .checkbox:checked + label::after {
