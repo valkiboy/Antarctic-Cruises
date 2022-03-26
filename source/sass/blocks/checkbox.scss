@@ -3,7 +3,7 @@
 }
 
 .checkbox {
-  margin-top: 18px;
+  display: none;
 }
 
 .checkbox:checked + label::after {
@@ -34,6 +34,7 @@
   width: 18px;
   height: 18px;
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (max-width: 767px) {
     left: 0;

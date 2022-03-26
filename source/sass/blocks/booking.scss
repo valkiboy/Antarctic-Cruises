@@ -6,11 +6,11 @@
   min-height: 555px;
   background-color: #9dbcdd;
 
-  @media (min-width: 1366px) and (min-resolution: 2dppx) {
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
     background-image: url("../img/content/booking-desktop@2x.jpg");
   }
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     min-height: 805px;
     background-position: left top;
     background-image: url("../img/content/booking-tablet.jpg");
@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
     justify-content: center;
     min-width: 450px;
@@ -54,7 +54,7 @@
 .booking__offer {
   width: 50%;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 100%;
   }
 }
@@ -67,7 +67,7 @@
   margin-top: 213px;
   margin-bottom: 5px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 419px;
     font-size: 34px;
     line-height: 51px;
@@ -93,9 +93,9 @@
   margin-left: 163px;
   margin-top: 8px;
   margin-right: 10px;
-  width: 52%;
+  width: 352px;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 84%;
     text-align: center;
     margin-top: 0;
@@ -118,7 +118,7 @@
 .booking__form-wrapper {
   width: 50%;
 
-  @media (max-width: 1365px) {
+  @media (max-width: 1023px) {
     width: 100%;
   }
 }
@@ -128,20 +128,24 @@
   min-height: 455px;
   background-color: #011c40;
   margin-left: auto;
-  margin-right: 163px;
+  margin-right: auto;
   margin-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
   box-sizing: border-box;
 
-  @media (max-width: 1365px) {
+  @media (min-width: 1366px) {
+    margin-right: 163px;
+  }
+
+  @media (max-width: 1023px) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
   }
 
   @media (max-width: 767px) {
-    width: 290px;
+    width: 100%;
     min-height: 460px;
     padding-left: 30px;
     padding-right: 30px;
@@ -189,7 +193,7 @@
   color: #011c40;
 
   @media (max-width: 767px) {
-    width: 230px;
+    width: 100%;
     box-sizing: border-box;
     margin-bottom: 21px;
   }
@@ -200,6 +204,11 @@
   line-height: 13px;
   color: #f9fbfd;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: #58b0e4;
+  }
 
   @media (max-width: 767px) {
     line-height: 12px;
@@ -213,6 +222,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
+
+  &:hover {
+    background-color: #aad7f1;
+  }
 
   @media (max-width: 767px) {
     margin-top: 25px;
