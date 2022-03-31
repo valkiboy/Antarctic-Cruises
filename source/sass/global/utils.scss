@@ -16,17 +16,17 @@
 }
 
 .wrapper {
-  margin-left: 103px;
-  margin-right: 103px;
+  padding-left: 103px;
+  padding-right: 103px;
 
   @media (max-width: 1023px) {
-    margin-left: 45px;
-    margin-right: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   @media (max-width: 767px) {
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

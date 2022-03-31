@@ -1,23 +1,23 @@
 .catalog__wrapper {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 90px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 90px;
 
   @media (min-width: 1365px) {
-    margin-left: 118px;
-    margin-right: 118px;
+    padding-left: 118px;
+    padding-right: 118px;
   }
 
   @media (max-width: 1023px) {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: 767px) {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 35px;
   }
 }
 
@@ -50,6 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 0;
 
   @media (max-width: 767px) {
     margin-top: 30px;
