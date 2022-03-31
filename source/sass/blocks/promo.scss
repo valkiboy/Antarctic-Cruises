@@ -1,18 +1,18 @@
 .promo__wrapper {
-  margin-top: 120px;
+  padding-top: 120px;
   min-height: 301px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 
   @media (max-width: 1023px) {
-    margin-top: 34px;
-    margin-bottom: 77px;
+    padding-top: 34px;
+    padding-bottom: 77px;
   }
 
   @media (max-width: 767px) {
     flex-direction: column;
-    margin-bottom: 65px;
+    padding-bottom: 65px;
   }
 }
 
