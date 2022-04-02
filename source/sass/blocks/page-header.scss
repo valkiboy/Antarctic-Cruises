@@ -54,7 +54,6 @@
   @media (max-width: 1023px) {
     margin-top: 15px;
     margin-bottom: 15px;
-    z-index: 3;
   }
 
   @media (max-width: 767px) {
@@ -65,7 +64,6 @@
     margin-bottom: 0;
     flex-direction: column;
     justify-content: flex-start;
-    z-index: 3;
   }
 }
 
@@ -114,7 +112,6 @@
     position: absolute;
     top: 20px;
     left: 50px;
-    z-index: 3;
   }
 }
 
@@ -135,12 +132,12 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  z-index: 3;
 
   @media (max-width: 1023px) {
     font-size: 14px;
     line-height: 17px;
     margin-top: 13px;
-    z-index: 3;
   }
 
   @media (max-width: 767px) {
@@ -151,7 +148,6 @@
     padding-left: 36px;
     margin-top: 55px;
     margin-bottom: 313px;
-    z-index: 3;
   }
 }
 
@@ -163,7 +159,6 @@
     margin-top: 30px;
     margin-bottom: -2px;
     padding-left: 24px;
-    z-index: 3;
   }
 }
 
@@ -188,6 +183,7 @@
 }
 
 // Основной экран
+// ---------------------------------------
 
 .page-header__wrapper h1 {
   font-size: 54px;
@@ -241,6 +237,7 @@
 }
 
 // Закрытое меню при рабочем js
+// ---------------------------------------
 
 .page-header--closed .page-header__list {
   @media (max-width: 767px) {
@@ -252,7 +249,6 @@
 .page-header--closed .page-header__toggle {
   @media (max-width: 767px) {
     display: block;
-    z-index: 3;
   }
 }
 
@@ -283,6 +279,7 @@
 }
 
 // Открытое меню при рабочем js
+// ---------------------------------------
 
 .page-header--open .page-header__logo-mobile-menu {
   @media (max-width: 767px) {
@@ -290,7 +287,6 @@
     position: absolute;
     top: 20px;
     left: 50px;
-    z-index: 3;
   }
 }
 
@@ -310,8 +306,8 @@
     margin-left: 35px;
     width: calc(100% - 35px);
     height: 100vh;
-    z-index: 3;
     padding-right: 15px;
+    overflow: auto;
   }
 }
 
@@ -352,7 +348,6 @@
 .page-header--open .page-header__list {
   padding-right: 46px;
   padding-left: 0;
-  z-index: 3;
 }
 
 .page-header--open .page-header__logo-wrapper {

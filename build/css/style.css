@@ -590,6 +590,7 @@ input:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  z-index: 3;
 }
 
 .page-header__list li {
@@ -674,7 +675,6 @@ input:-ms-input-placeholder {
 .page-header--open .page-header__list {
   padding-right: 46px;
   padding-left: 0;
-  z-index: 3;
 }
 
 .page-header--open .page-header__logo-wrapper {
@@ -1388,7 +1388,6 @@ input:-ms-input-placeholder {
   .page-header__main-nav {
     margin-top: 15px;
     margin-bottom: 15px;
-    z-index: 3;
   }
 
   .page-header__logo-wrapper {
@@ -1407,7 +1406,6 @@ input:-ms-input-placeholder {
     font-size: 14px;
     line-height: 17px;
     margin-top: 13px;
-    z-index: 3;
   }
 
   .page-header__list li:not(:last-child) {
@@ -1741,7 +1739,6 @@ input:-ms-input-placeholder {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    z-index: 3;
   }
 
   .page-header__logo-wrapper {
@@ -1757,7 +1754,6 @@ input:-ms-input-placeholder {
     position: absolute;
     top: 20px;
     left: 50px;
-    z-index: 3;
   }
 
   .page-header__list {
@@ -1771,14 +1767,12 @@ input:-ms-input-placeholder {
     padding-left: 36px;
     margin-top: 55px;
     margin-bottom: 313px;
-    z-index: 3;
   }
 
   .page-header__list li {
     margin-top: 30px;
     margin-bottom: -2px;
     padding-left: 24px;
-    z-index: 3;
   }
 
   .page-header__list a {
@@ -1806,7 +1800,6 @@ input:-ms-input-placeholder {
   .page-header--open .page-header__toggle,
   .page-header--closed .page-header__toggle {
     display: block;
-    z-index: 3;
   }
 
   .page-header--closed .page-header__logo-mobile-menu {
@@ -1825,7 +1818,6 @@ input:-ms-input-placeholder {
     position: absolute;
     top: 20px;
     left: 50px;
-    z-index: 3;
   }
 
   .page-header--open .page-header__nav-wrapper {
@@ -1841,8 +1833,8 @@ input:-ms-input-placeholder {
     margin-left: 35px;
     width: calc(100% - 35px);
     height: 100vh;
-    z-index: 3;
     padding-right: 15px;
+    overflow: auto;
   }
 
   .page-header--open .page-header__wrapper {
@@ -2213,6 +2205,14 @@ input:-ms-input-placeholder {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1636px) and (max-width: 2200px) {
+  .catalog__list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 
