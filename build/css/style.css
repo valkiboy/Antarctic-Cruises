@@ -2208,14 +2208,6 @@ input:-ms-input-placeholder {
   }
 }
 
-@media (min-width: 1636px) and (max-width: 2200px) {
-  .catalog__list {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-}
-
 @media (min-width: 1365px) and (max-width: 1365px) {
   .catalog__list li {
     margin-right: 20px;
