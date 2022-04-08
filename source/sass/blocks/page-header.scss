@@ -38,10 +38,20 @@
 //                Меню
 // ----------------------------------
 
-.page-header .page-header__nav-wrapper {
+.page-header__nav-wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+
+  @media (max-width: 1023px) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   @media (max-width: 767px) {
     padding-left: 0;
     padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -306,7 +316,6 @@
     margin-left: 35px;
     width: calc(100% - 35px);
     height: 100vh;
-    padding-right: 15px;
     overflow: auto;
   }
 }

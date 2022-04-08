@@ -549,6 +549,11 @@ input:-ms-input-placeholder {
   color: #f9fbfd;
 }
 
+.page-header__nav-wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
 .page-header__main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1385,6 +1390,11 @@ input:-ms-input-placeholder {
     background-image: url("../img/content/head-pictures-tablet.jpg");
   }
 
+  .page-header__nav-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   .page-header__main-nav {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1721,9 +1731,11 @@ input:-ms-input-placeholder {
     background-image: url("../img/content/head-pictures-mobile.jpg");
   }
 
-  .page-header .page-header__nav-wrapper {
+  .page-header__nav-wrapper {
     padding-left: 0;
     padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .page-header__main-nav {
@@ -1833,7 +1845,6 @@ input:-ms-input-placeholder {
     margin-left: 35px;
     width: calc(100% - 35px);
     height: 100vh;
-    padding-right: 15px;
     overflow: auto;
   }
 
