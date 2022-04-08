@@ -1721,11 +1721,9 @@ input:-ms-input-placeholder {
     background-image: url("../img/content/head-pictures-mobile.jpg");
   }
 
-  .page-header__nav-wrapper {
+  .page-header .page-header__nav-wrapper {
     padding-left: 0;
     padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .page-header__main-nav {
