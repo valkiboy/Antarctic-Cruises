@@ -1722,8 +1722,8 @@ input:-ms-input-placeholder {
   }
 
   .page-header__nav-wrapper {
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .page-header__main-nav {
